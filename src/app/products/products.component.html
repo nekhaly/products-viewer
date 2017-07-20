@@ -1,0 +1,28 @@
+<h2>Products List</h2>
+<div class="products list-group">
+  <a href="#" class="list-group-item" *ngFor="let product of productsList | async">   
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <h6 class="category">{{product.categories}}</h6>
+      </div> 
+      <div class="col-sm-12">
+        <div class="col-sm-10 col-xs-12">          
+          <h4><strong>{{product.name}}</strong></h4>
+          <h4>({{product.ID}})</h4>        
+        </div>
+        <div class="col-sm-2 col-xs-12 price-box">
+          <strong>{{product.price.currency + " " + product.price.amount}}</strong>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="col-sm-4 col-xs-12 photo-box">
+          <img src="{{product.properties.thumbnailURL[0]}}" />      
+        </div>
+        <div class="col-sm-8 col-xs-12">
+          <p class="description">{{product.description}}</p>
+          <h6><strong><a target="_blank" href="{{product.URL}}">more details...</a></strong></h6>          
+        </div>        
+      </div>          
+    </div>
+  </a>
+</div>

@@ -1,0 +1,48 @@
+.products.list-group .list-group-item .price-box , 
+.products.list-group .list-group-item .photo-box {
+    float: right;
+    text-align: right;
+    color: blueviolet;
+    font-size: 20px;
+}
+
+.products.list-group .list-group-item .category {
+    color: green;
+}
+
+.products.list-group .list-group-item .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 100px;        
+}
+
+@media (max-width: 600px) {
+    .products.list-group .list-group-item {
+        padding: 0;
+    }
+    
+    .products.list-group .list-group-item h4 {
+        font-size: 14px;
+    }        
+    
+    .products.list-group .container-fluid {
+        padding: 0;
+    }
+
+    .products.list-group .container-fluid {
+        padding: 0;
+    }
+
+    .products.list-group .list-group-item .photo-box {
+        float: none;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .products.list-group .list-group-item .price-box {
+        float: none;
+        text-align: left;
+        font-size: 14px;
+    }
+}

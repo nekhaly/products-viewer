@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
+        "styles.less",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/raleway-webfont/raleway.min.css"
       ],
